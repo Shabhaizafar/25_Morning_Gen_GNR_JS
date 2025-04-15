@@ -1,0 +1,1 @@
+document.write("Hello This is My First Line in a JS.");
