@@ -28,7 +28,7 @@
 
 
 
-var mystr = 'Royal Technosoft pvt ltd';
+// var mystr = 'Royal Technosoft pvt ltd';
 //index      01234.....................
 // console.log(mystr);
 
@@ -76,6 +76,8 @@ var mystr = 'Royal Technosoft pvt ltd';
 // ---------------------------------------------------------
 
 // mystr.indexOf
+ 
+
 // mystr.lastIndexOf
 
 // mystr.replace
