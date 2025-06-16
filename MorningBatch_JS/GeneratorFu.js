@@ -15,7 +15,7 @@ function*functionname(){
 */
 
 function * Generator(){
-    yield 1,   
+    yield 1,   a
     yield 2,
     yield "Hello",
     yield [11,1,2,3,4,5]
