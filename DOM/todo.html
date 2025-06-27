@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Static Todo List</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+    }
+    .todo-container {
+      width: 400px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .input-section {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .input-section input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .input-section button {
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: not-allowed;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background: #eee;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .actions .material-icons {
+      cursor: not-allowed;
+      margin-left: 10px;
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="todo-container">
+    <h2>Todo List</h2>
+
+    <!-- Input section (disabled look only) -->
+    <div class="input-section">
+      <input type="text" placeholder="Enter new todo..." >
+      <button>
+        <span class="material-icons">add</span>
+      </button>
+    </div>
+
+    <!-- Sample static todo -->
+    <ul>
+      <li>
+        <span>Sample Task: Learn HTML</span>
+        <div class="actions">
+          <span class="material-icons" title="Done">done</span>
+          <span class="material-icons" title="Edit">edit</span>
+          <span class="material-icons" title="Delete">delete</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+
+  <script>
+    document.querySelector('button').onclick = function (){
+            // how to create a new element using js : 
+        var newli = document.createElement('li');
+        newli.innerHTML = `<span>${document.querySelector('input').value}</span>
+        <div class="actions">
+          <span class="material-icons" title="Done">done</span>
+          <span class="material-icons" title="Edit">edit</span>
+          <span class="material-icons" title="Delete">delete</span>
+        </div>`;
+        
+
+        // How to append new child using js : 
+        document.querySelector('ul').appendChild(newli);
+
+
+        document.querySelector('input').value = "";
+    }
+  </script>
+</body>
+</html>
+
+
