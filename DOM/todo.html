@@ -56,10 +56,14 @@
       align-items: center;
     }
     .actions .material-icons {
-      cursor: not-allowed;
+      cursor: pointer;
       margin-left: 10px;
       font-size: 20px;
       color: #333;
+    }
+    .completed{
+      color: gray;
+      text-decoration: line-through;
     }
   </style>
 </head>
@@ -100,13 +104,25 @@
           <span class="material-icons" title="Edit">edit</span>
           <span class="material-icons" title="Delete">delete</span>
         </div>`;
-        
-
         // How to append new child using js : 
         document.querySelector('ul').appendChild(newli);
-
-
         document.querySelector('input').value = "";
+    }
+
+    document.querySelector('ul').onclick = function (event){
+      if(event.target.innerHTML == "done"){
+        // console.log(event.target.parentElement.parentElement);
+        event.target.parentElement.parentElement.children[0].classList.add('completed');
+        console.log(event.target.parentElement.parentElement.children[0].classList);
+
+      }else if(event.target.innerHTML == "edit"){
+        if(!event.target.parentElement.parentElement.children[0].classList.contains('completed')){
+            var v1 = prompt("Enter New Value : ");
+            event.target.parentElement.parentElement.children[0].innerHTML = v1;
+        }
+      }else if(event.target.innerHTML == "delete"){
+        console.log("Delete");
+      }
     }
   </script>
 </body>
