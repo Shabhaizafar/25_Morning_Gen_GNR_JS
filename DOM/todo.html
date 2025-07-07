@@ -96,6 +96,9 @@
 
   <script>
     document.querySelector('button').onclick = function (){
+        if(document.querySelector('input').value==''){
+            return;
+        }
             // how to create a new element using js : 
         var newli = document.createElement('li');
         newli.innerHTML = `<span>${document.querySelector('input').value}</span>

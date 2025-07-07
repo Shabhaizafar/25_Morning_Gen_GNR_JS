@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var str = "150+250*133";
+        var n1=0,n2,temp="+";
+        var ans = 0;
+        var op = ["+","-","*"];
+        var j = 0;
+        function calculate(temp,n2){
+             switch (temp) {
+            case "+": return +n1 + +n2;
+            case "-": return +n1 - +n2;
+            case "*": return +n1 * +n2;
+        }
+        }
+        for (let i = 0; i < str.length; i++) {
+            if(i==str.length-1){
+                n1 = calculate(str[j-1],str.slice(j));
+            }
+            if(op.includes(str[i])){
+                n1 = calculate(temp,str.slice(j,i));
+                temp = str[i];
+                j = i+1;
+            }
+        }
+       console.log(n1);
+    </script>
+</body>
+</html>
