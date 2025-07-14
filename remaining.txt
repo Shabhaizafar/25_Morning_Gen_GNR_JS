@@ -24,9 +24,7 @@ Async vs defer.
 
     
 ===================================================================
-  - Array+Object destructuring.
 
-   ✅ Computed properties.
 
  - Default Parameters.
    ✅ Rest Parameters.
