@@ -10,13 +10,14 @@ var AllMethods = {
         console.log("Hello ");
     }
 };
-
+console.log(AllMethods.__proto__);
 
 function Person(fname, lname, age) {
     var user = Object.create(AllMethods);
     user.firstname = fname;
     user.lastname = lname;
     user.age = age;
+    console.log(user.__proto__);
     return user;
 }
 
@@ -35,4 +36,11 @@ obj2.is18();
 obj2.greet();
 
 
-// proto and prototype   : empty space 
+console.log(obj1.__proto__);
+console.log(obj2.__proto__);
+
+
+
+
+// what is prototype ?
+// difference between proto and prototype ?
