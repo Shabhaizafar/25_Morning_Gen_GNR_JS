@@ -22,7 +22,6 @@ document.querySelector('.btn-1').onclick = function () {
     myworker.onmessage = function (event) {
         document.querySelector('span').innerText = event.data;
     }
-
 };
 
 document.querySelector('.btn-2').onclick = function () {

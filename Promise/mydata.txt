@@ -1,0 +1,41 @@
+{
+  "student1": {
+    "name": "Aarav Sharma",
+    "age": 17,
+    "gender": "Male",
+    "grade": "12th",
+    "rollNumber": 101,
+    "subjects": {
+      "Math": 88,
+      "English": 92,
+      "Physics": 85,
+      "Chemistry": 80
+    }
+  },
+  "student2": {
+    "name": "Priya Verma",
+    "age": 16,
+    "gender": "Female",
+    "grade": "11th",
+    "rollNumber": 102,
+    "subjects": {
+      "Math": 78,
+      "English": 89,
+      "Biology": 94,
+      "Chemistry": 90
+    }
+  },
+  "student3": {
+    "name": "Rohan Mehta",
+    "age": 18,
+    "gender": "Male",
+    "grade": "12th",
+    "rollNumber": 103,
+    "subjects": {
+      "Math": 95,
+      "English": 85,
+      "Physics": 91,
+      "Computer": 98
+    }
+  }
+}

@@ -51,7 +51,7 @@ Async vs defer.
 
    - Global Execution context. //local
    - This and window in global execution context.
-   - Hoisting.
+   - Hoisting. 
    - Are let and const are hoisted ? What is a reference Error ?.
    - Function execution context.
    - Scope chain and lexical environment.
@@ -91,3 +91,4 @@ Async vs defer.
    - Fetch API.
    - Error Handling in Fetch API.
    - Consume Promises with async and Await.
+
