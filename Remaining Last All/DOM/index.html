@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        section{
+            background-color: black;
+            color: white;
+            font-family: calibri;
+            font-size: 24px;      
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+        div{
+            border: 2px solid teal;
+            width: 500px;
+            height : 200px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p id="p1" draggable="true" ondragstart="dragParagraph(event)">Royal Technosoft p ltd.</p>
+        <div ondragover="dragOverParagraph(event)" ondrop="dropParagraph(event)"></div>
+    </section>
+    <script src="dragandDrop.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
