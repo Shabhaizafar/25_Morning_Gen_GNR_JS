@@ -1,0 +1,72 @@
+/* Univarsal Selector */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Wrapper Class */
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: grid;   
+    background-color: #1c1c1c;
+    gap: 20px;
+}
+
+.code{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 20px;
+    gap: 20px;
+    border-bottom: 1px solid rgb(63, 63, 63);
+}
+.code>aside{
+    background-color: #1d1e22;
+    border-left: 1px solid rgb(63, 63, 63);
+    border-right: 1px solid rgb(63, 63, 63);
+}
+.output{
+    background-color: #fff;
+}
+
+.code-content{
+    /*  */
+}
+.code-header{
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-between;
+    color: #5a5f73;
+    font-family: verdana;
+    font-weight: bold;
+}
+.code-header .side1{
+    background-color: #1d1e22;
+    padding: 5px 15px;
+}
+.code-header .side2{
+    padding: 5px 15px;
+}
+.code-header .side2 button{
+    background-color: #5a5f73;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.material-symbols-outlined{    
+    padding: 2px 5px;
+    font-size: 12px !important;
+}
+
+.html{
+    /*  */
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.css{
+    /*  */
+}
+.js{
+    /*  */
+}
